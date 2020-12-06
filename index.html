@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Donlinestore.com</title>
+	</head>
+	<body>
+		<header>
+			<div class="logo-container">
+				<img height="60px" src="./images/logo5.png" alt="logo" />
+                <h4 class="logo">Online Store</h4>
+                <input class="inputsearchbar" size='40' type="text">
+                <button class='button2'>
+                    <img src='./images/searchicon2.png'>
+                </button>
+			</div>
+            <buttonlogin class="buttonlogin" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</buttonlogin>
+            <div id="id01" class="modal">
+              <form class="modal-content animate" action="/action_page.php" method="post">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input class="inputname" placeholder="Enter Username" name="uname" required>
+
+                  <label for="psw"><b>Password</b></label>
+                  <input class='inputpass' placeholder="Enter Password" name="psw" required>
+
+                  <buttonlogin type="submit">Login</buttonlogin>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                  <buttonlogin type="buttonlogin" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</buttonlogin>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+            </div>
+            
+            
+            <buttonlogin class="signupmargin" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</buttonlogin>
+            <div id="id02" class="modal2">
+              <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Modal">&times;</span>
+              <form class="modal2-content" action="/action_page.php">
+                <div class="container">
+                  <h1>Sign Up</h1>
+                  <p>Please fill in this form to create an account.</p>
+                  <hr>
+                  <label for="email"><b>Email</b></label>
+                  <input class="inputname" placeholder="Enter Email" name="email" required>
+                    <br>
+                    
+                  <label for="psw"><b>Password</b></label>
+                  <input class="inputpass" placeholder="Enter Password" name="psw" required>
+                    <br>
+                  <label for="psw-repeat"><b>Repeat Password</b></label>
+                  <input class='inputpass' placeholder="Repeat Password" name="psw-repeat" required>
+
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                  </label>
+
+                  <p>By creating an account you agree to our <a href="#" style="color:black">Terms & Privacy</a>.</p>
+
+                  <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Products</button>
+              <div class="dropdown-content">
+                <a href="#mobile">Mobile</a>
+                <a href="#laptop">Laptop</a>
+                <a href="#tv">Television</a>
+                <a href='#refridgerator'>Refridgerator</a>
+                <a href="#ac">Air Conditioner</a>
+              </div>
+            </div>
+			<div class='cart'>
+				<img src="./images/cart.svg" alt="cart" />
+			</div>
+        </header>
+        
+        
+        
+        <div class='sideandcarouselcontainer'>
+        <div class="leftside"></div>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <img src="./images/img1.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="./images/img2.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="./images/img3.jpg" style="width:100%"/>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+            
+        <!---mobile--->
+            
+        <section id="mobile">
+        <div class="headeritems">Smart Phone</div>
+            <div class="imgflex">
+                <div class="imgcontainer">
+                     <img  height="200px" src="./images/oneplus8.jpg">
+                    <a href="">OnePlus 8 (Glacial Green 6GB RAM+128GB Storage)</a>
+                    <p>by OnePlus&nbsp;&nbsp;₹ 41,999.00 </p>
+                    <img src="./images/m1r.png">
+                </div>
+                <div class="imgcontmargin">
+                <div class="imgcontainer">
+                    <img  height="200px" src="./images/oneplus8inter.jpg">
+                    <a href="">OnePlus 8 (Interstellar Glow 12GB RAM+256GB Storage)</a>
+                    <p>by OnePlus&nbsp;&nbsp;₹ 49,999.00</p>
+                    <img src="./images/m2r.png">
+                </div>
+                </div>
+                <div class="imgcontmargin">
+                <div class="imgcontainer">
+                    <img height="200px" src="./images/samsungm21.png">
+                    <a href="">Samsung GalaxyM21 (Midnight Blue,4GB RAM,64GB Storage)</a>
+                    <p>by Samsung&nbsp;&nbsp;₹ 13,999.00</p>
+                    <img src="./images/m3r.jpg">
+                </div>
+                </div> 
+                 <div class="imgcontmargin">
+                <div class="imgcontainer">
+                    <img height="200px"  src="./images/samsunggalaxys11.jpg">
+                    <a href="">Samsung Galaxy M11 (Violet, 3GB RAM, 32GB Storage)</a>
+                    <p>by Samsung&nbsp;&nbsp;₹ 10,998.00 </p>
+                    <img src="./images/m4r.png">
+                </div>
+                </div>   
+            </div>    
+        </section>
+            
+          <!---laptop--->
+            
+        <section id="laptop">
+        <div class="content-wrapimage">
+        <div class="headeritemstv">Laptop</div>
+            <div class="imgflextv">
+                <div class="imgcontmargin1">
+                <div class="imgcontainerlap">
+                     <img  height="200px" src="./images/lenovo.jpg">
+                    <div class="descriptionlap">
+                    <a href="">Lenovo Legion Y540 9th Gen Intel Core i5 15.6 inch FHD Gaming Laptop (8GB/512GB SSD/NVIDIA GTX 1650 4GB Graphics/Windows 10/Black/2.3Kg),81SY00CKIN</a>
+                        <p>by Lenovo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹ 63,990.00</p>
+                        <img src="./images/l1r.JPG">
+                    </div>
+                </div>
+                </div>
+                <div class="imgcontmargin">
+                <div class="imgcontainerlap">
+                    <img  height="200px" src="./images/asusvivobook.jpg">
+                    <div class="descriptionlap">
+                    <a href="">ASUS VivoBook 15 Intel Core i3 8th Gen 15.6-inch FHD Thin and Light Laptop (4GB RAM/1TB HDD/Windows 10 Pro/Integrated Graphics/FP Reader/Slate Grey/1.70 Kg), P1504FA-EJ1232R</a>
+                    <p>by Asus&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹ 38,950.00</p>
+                        <img src="./images/l2r.JPG">
+                    </div>
+                </div>
+                </div>
+                <div class="imgcontmargin">
+                <div class="imgcontainerlap">
+                    <img height="200px" src="./images/hp.jpg">
+                    <div class="descriptionlap">
+                    <a href="">HP 15q ds0049TU 15.6-inch Laptop (8th Gen i3-8130U/8GB/256GB SSD/Windows 10 Home/MS Office 2019/Integrated Graphics), Jet Black</a>
+                    <p>by HP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹ 37,690.00 </p>
+                        <img src="./images/l3r.JPG">
+                    </div>
+                </div>
+                </div> 
+                 <div class="imgcontmargin">
+                <div class="imgcontainerlap">
+                    <img height="200px"  src="./images/macbook.jpg">
+                    <div class="descriptionlap">
+                    <a href="">Apple MacBook Pro (16-inch, 16GB RAM, 512GB Storage, 2.6GHz 9th Gen Intel Core i7) - Space Grey</a>
+                    <p>by Apple&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹ 1,89,990.00 </p>
+                        <img src="./images/l4r.JPG">
+                    </div>
+                </div>
+                </div>   
+            </div>
+            </div>
+        </section>
+            
+           <!---tv---> 
+            
+         <section id="tv">
+        <div class="content-wrapimage"> 
+        <div class="headeritemstv">Television</div>
+            <div class="imgflextv">
+                <div class="imgcontainertv">
+                     <img  height="200px" src="./images/tv1.jpg">
+                    <a href="">Samsung 80 cm (32 inches) Wondertainment Series HD Ready LED Smart TV UA32TE40AAKXXL (Titan Gray) (2020 model)</a>
+                    <p>by Samsung&nbsp;&nbsp;₹ 15,999.00</p>
+                    <img src="./images/tv1r.JPG">
+                </div>
+                <div class="imgcontmargin">
+                <div class="imgcontainertv">
+                    <img  height="200px" src="./images/tv2.jpg">
+                    <a href="">LG 80 cm (32 Inches) HD Ready Smart LED TV 32LM560BPTC (Dark Iron Gray) (2019 Model)</a>
+                    <p>by LG&nbsp;&nbsp;₹ 13,999.00</p>
+                    <img src="./images/tv2r.JPG">
+                </div>
+                </div>
+                <div class="imgcontmargin">
+                <div class="imgcontainertv">
+                    <img height="200px" src="./images/tv3.jpg">
+                    <a href="">Sony Bravia 80 cm (32 inches) HD Ready LED TV KLV-32R202G (Dark Brown)</a>
+                    <p>by Sony&nbsp;&nbsp;₹ 15,990.00 </p>
+                    <img src="./images/tv3r.JPG">
+                </div>
+                </div> 
+                 <div class="imgcontmargin">
+                <div class="imgcontainertv">
+                    <img height="200px"  src="./images/tv4.jpg">
+                    <a href="">TCL 108 cm (43 inches)  AI 4K UHD Certified Android Smart LED TV 43P8 (Black) (2019 Model)</a>
+                    <p>by TCL&nbsp;&nbsp;₹ 25,899.00 </p>
+                    <img src="./images/tv4r.JPG">
+                </div>
+                </div>   
+            </div>  
+             </div>
+        </section> 
+            
+        <!---fridge--->
+            
+        <section id="refridgerator">
+        <div class="headeritemstv">Refridgerator</div>
+            <div class="imgflexfridge">
+                <div class="imgcontainer">
+                     <img  height="200px" src="./images/ref1.jpg">
+                    <a href="">Samsung 253 L 1 Star Frost Free Double Door Refrigerator(RT28M3022S8, Elegant Inox, Inverter Compressor)</a>
+                    <p>by Samsung&nbsp;&nbsp;₹ 19,590.00</p>
+                    <img src="./images/tv1r.JPG">
+                </div>
+                <div class="imgcontmargin">
+                <div class="imgcontainer">
+                    <img  height="200px" src="./images/ref2.jpg">
+                    <a href="">Whirlpool 265 L 3 Star Inverter Frost-Free Double Door Refrigerator (INTELLIFRESH INV CNV 278 3S, Black Sparkle, Convertible)</a>
+                    <p>by Whirlpool&nbsp;&nbsp;₹ 24,440.00</p>
+                    <img src="./images/tv2r.JPG">
+                </div>
+                </div>
+                <div class="imgcontmargin">
+                <div class="imgcontainer">
+                    <img height="200px" src="./images//ref3.jpg">
+                    <a href="">LG 260 L 2 Star Inverter Frost-Free Double-Door Refrigerator (GL-N292RDSY, Jet Ice, Dazzle Steel)</a>
+                    <p>by LG&nbsp;&nbsp;₹ 21,990.00</p>
+                    <img src="./images/tv3r.JPG">
+                </div>
+                </div> 
+                 <div class="imgcontmargin">
+                <div class="imgcontainer">
+                    <img height="200px"  src="./images/ref4.jpg">
+                    <a href="">Panasonic 268 L 2 Star Inverter Double Door Refrigerator(NR-TBG27VSS3,Shining Silver)</a>
+                    <p>by Panasonic&nbsp;&nbsp;₹ 23,490.00 </p>
+                    <img src="./images/tv4r.JPG">
+                </div>
+                </div>   
+            </div>  
+        </section>  
+            
+        <!---ac---> 
+            
+         <section id="ac">
+        <div class="content-wrapimage"> 
+        <div class="headeritemsac">Air Conditioner</div>
+            <div class="imgflexac">
+                <div class="imgcontainerac">
+                     <img  height="130px" src="./images/ac1.jpg">
+                    <a href="">AmazonBasics 1 Ton 3 Star 2020 Inverter Split AC with High Density filter (Copper Condenser, White)</a>
+                    <p>by AmazonBasics&nbsp;&nbsp;₹ 22,499.00</p>
+                    <img src="./images/ac1r.JPG">
+                </div>
+                <div class="imgcontmargin">
+                <div class="imgcontainerac">
+                    <img  height="130px" src="./images/ac2.jpg">
+                    <a href="">TCL Elite Turbo 1.5 ton 3 Star Ultra-Inverter Split AC (Copper, TAC-18CSD/V3, White, Fast cooling)</a>
+                    <p>by TCL&nbsp;&nbsp;₹ 31,990.00 </p>
+                    <img src="./images/ac2r.JPG">
+                </div>
+                </div>
+                <div class="imgcontmargin">
+                <div class="imgcontainerac">
+                    <img height="130px" src="./images/ac3.jpg">
+                    <a href="">Voltas 1.5 Ton 3 Star Split AC (Copper 183EZA White)</a>
+                    <p> by Voltas&nbsp;&nbsp;₹ 27,999.00</p>
+                    <img src="./images/ac3r.JPG">
+                </div>
+                </div> 
+                 <div class="imgcontmargin">
+                <div class="imgcontainerac">
+                    <img height="130px"  src="./images/ac4.jpg">
+                    <a href="">Whirlpool 1.5 Ton 3 Star Inverter Split AC (Copper, 1.5T MAGICOOL PRO+ 3S COPR INVERTER, White)</a>
+                    <p>by Whirlpool&nbsp;&nbsp;₹ 28,990.00</p>
+                    <img src="./images/ac4r.JPG">
+                </div>
+                </div>   
+            </div>  
+             </div>
+        </section>     
+        </div>
+            <div class="rightside"></div>
+        </div>
+        <div class="footer">
+            <div class="afooter">donlinestore.com<br>
+            by<br>Dhiren parekh</div>
+        </div>
+        <script text="text/javascript" src="javascript.js"></script>
+	</body>
+</html>
